@@ -4,32 +4,99 @@
   <head>
     <title>Website Design System</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
   </head>
-<body>
+
+  <body>
   <header>
     <ul>
-        <li>Welcome</li>
-        <li>Color</li>
-        <li>Fonts</li>
-        <li>Text Style</li>
-      </ul>
+      <li><a href="#welcome">Welcome</a></li>
+      <li><a href="#color-box">Colors</a></li>
+      <li><a href="#font-box">Fonts</a></li>
+      <li><a href="#style-box">Text Style</a></li>
+      <li><a href="#video-box">Video</a></li>
+    </ul>
   </header>
   
-  <div class="welcome">
+  <!--WELCOME BOX-->
+  <div class="welcome" id="welcome">
     <h1>My website design system</h1>
   </div>
-  <div class="container-main">
-    <div id="title">
-      <h2>Color</h2>
+
+
+
+  <div class="first-part">
+    <!--COLOR BOX-->
+    <div class="container-main" id="color-box">
+    
+      <div id="title"><h2>Colors</h2></div>
+      <div class="color" id="blue"><h3>"Ocean Blue"<br>rgb(20, 89, 129)</h3></div>
+      <div class="color" id="green"><h3>"Winter Night Green"<br>#1a3300</h3></div>
+      <div class="color" id="red"><h3>"Santa's Red"<br>red</h3></div>
+      <div class="color" id="pink"><h3>"Forget Me Not Pink"<br>hsla(0, 84%, 62%, 0.9)</h3></div>
+
     </div>
 
-    <div class="color" id="blue"><h3>"Ocean Blue"<br>#007399</h3></div>
-    <div class="color" id="green"><h3>"Winter Night Green"<br>#1a3300</h3></div>
-    <div class="color" id="red"><h3>"Santa's Red"<br>#b32d00</h3></div>
-    <div class="color" id="pink"><h3>"Forget Me Not Pink"<br>#ff6699</h3></div>
+    <!-- FONT BOX -->
+    <div class="container-main" id="font-box">
+      <div id="title"><h2>Fonts</h2></div>
 
+        <!--set some example-->
+        <!--ROBOTO-->
+        <div class="font-container"><h2>Roboto</h2>
+          <div id="robo" ><p>"That’s one small step for man,  one giant leap for mankind."</p></div>
+          <div id="robo" class="italic"><p>"That’s one small step for man, one giant leap for mankind."</p></div>
+          <div id="robo" class="bold"><p>"That’s one small step for man, one giant leap for mankind."</p></div>
+        </div>
+
+        <!--CINZEL-->
+        <div class="font-container"><h2>Cinzel</h2>
+          <div id="cinzel" ><p>"That’s one small step for man,  one giant leap for mankind."</p></div>
+          <div id="cinzel" class="italic"><p>"That’s one small step for man, one giant leap for mankind."</p></div>
+          <div id="cinzel" class="bold"><p>"That’s one small step for man, one giant leap for mankind."</p></div>
+        </div>
+
+        <!-- MONOTON -->
+        <div class="font-container"><h2>Monoton</h2>
+          <div id="monoton" ><p>"That’s one small step for man,  one giant leap for mankind."</p></div>
+          <div id="monoton" class="italic"><p>"That’s one small step for man, one giant leap for mankind."</p></div>
+          <div id="monoton" class="bold"><p>"That’s one small step for man, one giant leap for mankind."</p></div>
+        </div>
     </div>
 
-  </div>
+  <!-- TEXT STYLE BOX -->
+  <div class="container-main" id="style-box">
+    <div id="title"><h2>Text Styles</h2></div>
+
+    <!--set some example-->
+    <div class="container-main"id="h1">
+      <h1>H1: Main page heading</h1>
+      <div class = "style-body">
+        <p>Font-weight: 400</p>
+        <p>Font-size: 30px</p>
+        <p>Font-family: Arial, Helvetica, sans-serif;</p>
+      </div>
+    </div>
+    
+    <div id="h2">
+      <h2>H2: Subheading</h2>
+      <div class = "style-body">
+        <p>Font-weight: bold</p>
+        <p>Font-size: 20px</p>
+        <p>Font-family: Georgia, 'Times New Roman', Times, serif;</p>
+      </div>  
+    </div>
+
+    <div id="p">
+      <p>P: paragraph text</p>
+      <div class = "style-body">
+        <p>Font-weight: lighter</p>
+        <p>Font-size: 17px</p>
+        <p>Font-family: Verdana, Geneva, Tahoma, sans-serif;</p>
+      </div>
+    </div>
+  </div> 
+</div>
+
 </body>
 </html>

@@ -1,11 +1,30 @@
+/* Universal Styles */
+@font-face {
+  font-family: 'Cinzel', serif;
+  src: url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+}
 
 body{
     margin: 40px auto;
-    /*background-color: black;*/
-    background-image: url("https://publicdomainpictures.net/pictures/60000/nahled/stars-in-night-sky.jpg");
 }
 
-/* HEADER */
+/* first part of the page */
+.first-part {
+  background-image: url("https://publicdomainpictures.net/pictures/60000/nahled/stars-in-night-sky.jpg");
+  margin: 20px;
+  opacity: 0.8;
+}
+
+/*second part of the page */
+
+.second-part {
+  background-color: hsla(310, 50%, 50%, 0.2);
+  margin: 20px;
+  height: auto;
+  width: 70%;
+  margin-left: 30px;
+}
+/* ------------------------------------------------------------------- HEADER -------------------------------------------------------- */
 
 header {
     background-color: #466995;
@@ -21,8 +40,8 @@ header {
     text-align: center;
   }
   
-  li {
-    color: #FFF;
+  li, a {
+    color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -31,8 +50,7 @@ header {
     width: 100px;
   }
 
-
-/* WELCOME */
+/* ----------------------------------------------------------------------- WELCOME ------------------------------------------------------ */
 
 .welcome {
     z-index: -2;
@@ -42,32 +60,40 @@ header {
     border: 5px solid rgb(102, 204, 255);
     padding: 20px;
     margin-left: 15%;
-    margin: 40px 80px 5px 20px auto;
+    margin: 40px 80px 5px 40px;
     text-transform: capitalize;
     box-sizing: border-box;
     position: relative;
     top: 50px;
   }
   
+  /* ----------------------------------------------------------------------- MAIN CONTAINERS -------------------------------------------------------- */
+.container-main {
+  background-color: lightgrey;
+  width: 80%;
+  border: 5px solid green;
+  padding: 10px;
+  margin-left: 10%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 
-  /* COLORS */
+  /* ---------------------------------------------------------------------------------COLORS ------------------------------------------------------ */
 
-  .container-main {
-    background-color: lightgrey;
-    width: 80%;
-    border: 5px solid green;
-    padding: 10px;
-    margin-left: 10%;
-    margin-top: 5px;
+  #color-box{
     background-image: url("http://images.freecreatives.com/wp-content/uploads/2015/06/rainbow-wallpapers.jpg");
   }
   
   #title {
-    padding: 10px;
-    width: 120px;
+    padding: 1px;
+    width: 50%;
+    height: 2%;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
+    border-bottom: solid black 5px;
+    border-bottom-right-radius: 20%;
+    margin: 10px;
   }
   
   .color {
@@ -83,7 +109,7 @@ header {
   }
   
   #blue{
-    background-color: #007399;
+    background-color: rgb(20, 89, 129);
   }
   
   #green{
@@ -95,11 +121,151 @@ header {
   }
 
   #pink {
-    background-color: #ff6699;
+    background-color: hsla(0, 84%, 62%, 0.911);
   }
 
-/* OTHER */
+/* ---------------------------OTHER FROM COLORS -------------------------------- */
 
 header, h2, h3 {
-    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ---------------------------------------------------------------------- FONTS ---------------------------------------------------------------- */
+
+/* font-box main container */
+#font-box {
+  background-image: url("https://image.freepik.com/free-vector/white-cubes-pattern_1053-248.jpg");
+}
+
+/* single containers for font boxes */
+.font-container {
+  border: solid black 5px;
+  width: 30%;
+  margin: 10px 15px 10px 15px;
+  display: inline-block;
+  background-color: hsla(0, 50%, 50%, 0.2);
+  font-size: 20px;
+}
+/* style and weight for the font box */
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* font styles */
+
+#robo {
+  font-family: 'Roboto', sans-serif;
+}
+
+#cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+#monoton {
+  font-family: 'Monoton', cursive;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------ STYLES -------------------------------------------------------------- */
+
+#style-box {
+  background-color: aqua;
+}
+
+#h1 {
+  font-weight: 400;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(5, 59, 95);
+  text-transform: uppercase;
+  width: 70%;
+  border: black solid 1px;
+}
+
+#h2 {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: hsl(120, 50%, 50%);
+  width: 50%;
+  border: black solid 1px;
+}
+
+#p {
+  font-weight: lighter;
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 40%;
+  background-color: rgb(247, 6, 194);
+  border: black solid 1px;
+}
+
+#h1, #h2, #p {
+  text-align: justify;
+  color: white;
+  margin: 5px;
+}
+
+#video {
+  background-color: white;
+
+}
+
+
+/* VIDEO --------------------------- https://stackoverflow.com/questions/20818881/use-video-as-background-for-div  ------------------------------ */
+
+.video-container {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+  padding: 10%;
+}
+
+
+video {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  border: black solid 2px;
+  margin-bottom: 20px;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+
+.video-container .caption-heading {
+  z-index: 1;
+  position: relative;
+  color: #111822;
+  font-size: 40px;
+  text-align: center;
+}
+
+.video-container h2 {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+.video-container .caption-body {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: rgb(5, 59, 95);
+}
+
+span {
+  font-weight: bold;
 }

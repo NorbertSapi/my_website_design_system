@@ -20,9 +20,6 @@ body{
 .second-part {
   background-color: hsla(310, 50%, 50%, 0.2);
   margin: 20px;
-  height: auto;
-  width: 70%;
-  margin-left: 30px;
 }
 /* ------------------------------------------------------------------- HEADER -------------------------------------------------------- */
 
@@ -219,3 +216,52 @@ header, h2, h3 {
 
 }
 
+/* VIDEO --------------------------- https://stackoverflow.com/questions/20818881/use-video-as-background-for-div  ------------------------------ */
+
+.video-container {
+  height: 70%;
+  width: 70%;
+  overflow: hidden;
+  position: relative;
+  margin: 20px;
+  padding: 10%;
+  background-color: rgb(159, 159, 216);
+  
+  z-index: 1;
+  position: relative;
+  text-align: center;
+}
+
+
+video {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh; /* minimum height = screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+
+.video-container .caption-heading {
+  color: rgb(228, 235, 240);
+  background-color: rgb(20, 89, 129);
+}
+
+.video-container h2 {
+  font-size: 60px;
+}
+
+
+.video-container .caption-body {
+  color: rgb(228, 235, 240);
+  background-color: rgb(117, 21, 182);
+}
+
+span {
+  font-weight: bold;
+}
